@@ -10,7 +10,12 @@
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
+
+    <ion-button color="primary" (click)="switchTheme(null)"><ion-label>Theme default</ion-label></ion-button>
+    <ion-button color="secondary" (click)="switchTheme('hockey')"><ion-label>Theme hockey</ion-label></ion-button>
+    <ion-button color="tertiary" (click)="switchTheme('football')"><ion-label>Theme football</ion-label></ion-button>
+
+    <ion-card class="welcome-card" color="primary">
       <ion-img src="/assets/shapes.svg"></ion-img>
       <ion-card-header>
         <ion-card-subtitle>Get Started</ion-card-subtitle>
@@ -20,11 +25,11 @@
         <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
       </ion-card-content>
     </ion-card>
-    <ion-list lines="none">
+    <ion-list lines="none" color="secondary">
       <ion-list-header>
         <ion-label>Resources</ion-label>
       </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
+      <ion-item href="https://ionicframework.com/docs/" color="tertiary">
         <ion-icon slot="start" color="medium" name="book"></ion-icon>
         <ion-label>Ionic Documentation</ion-label>
       </ion-item>

@@ -1,0 +1,23 @@
+:root {
+  ion-content {
+    --background: var(--ion-color-success);
+  }
+}
+
+:root[theme="hockey"] {
+  ion-content {
+    --background: var(--ion-color-warning);
+  }
+}
+
+:root[theme="football"] {
+  ion-content {
+    --background: var(--ion-color-danger);
+  }
+}
+
+ion-header {
+  ion-toolbar {
+    --background: var(--my-dynamic-background-color);
+  }
+}
